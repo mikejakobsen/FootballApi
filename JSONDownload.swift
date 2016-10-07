@@ -24,7 +24,12 @@ class JSONDownload {
                     guard let data = data else {
                         throw JSONError.NoData
                     }
-                    guard let json = try JSONSerialization.jsonObject(with: <#T##Data#>, options: <#T##JSONSerialization.ReadingOptions#>)
+                    guard let json = try JSONSerialization.jsonObject(with: <#T##Data#>, options: []) as? [String: AnyObject] else {
+                        throw JSONError.ConvertionFailed
+                        }
+                    if let delegate = self.delegate {
+                        delegate.finishedDOwnloadingJSON(data)
+                    }
                 } catch let error as JSONError {
                     print(error.rawValue)
                 } catch let error {

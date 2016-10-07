@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		271280481DA79983008EF5A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271280471DA79983008EF5A1 /* AppDelegate.swift */; };
-		2712804A1DA79983008EF5A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271280491DA79983008EF5A1 /* ViewController.swift */; };
 		2712804D1DA79983008EF5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2712804B1DA79983008EF5A1 /* Main.storyboard */; };
 		2712804F1DA79983008EF5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2712804E1DA79983008EF5A1 /* Assets.xcassets */; };
 		271280521DA79983008EF5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271280501DA79983008EF5A1 /* LaunchScreen.storyboard */; };
+		2712805C1DA79A6A008EF5A1 /* PlayerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712805B1DA79A6A008EF5A1 /* PlayerListViewController.swift */; };
+		271280601DA79D91008EF5A1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2712805F1DA79D91008EF5A1 /* Player.swift */; };
+		271280621DA7A067008EF5A1 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271280611DA7A067008EF5A1 /* StateController.swift */; };
+		271280641DA7A351008EF5A1 /* JSONDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271280631DA7A351008EF5A1 /* JSONDownload.swift */; };
+		271280661DA7A3D4008EF5A1 /* JSONDownloadDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271280651DA7A3D4008EF5A1 /* JSONDownloadDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		271280441DA79983008EF5A1 /* Fodbold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fodbold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		271280471DA79983008EF5A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		271280491DA79983008EF5A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2712804C1DA79983008EF5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2712804E1DA79983008EF5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		271280511DA79983008EF5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		271280531DA79983008EF5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2712805B1DA79A6A008EF5A1 /* PlayerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListViewController.swift; sourceTree = "<group>"; };
+		2712805F1DA79D91008EF5A1 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../Player.swift; sourceTree = "<group>"; };
+		271280611DA7A067008EF5A1 /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StateController.swift; path = ../StateController.swift; sourceTree = "<group>"; };
+		271280631DA7A351008EF5A1 /* JSONDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDownload.swift; path = ../JSONDownload.swift; sourceTree = "<group>"; };
+		271280651DA7A3D4008EF5A1 /* JSONDownloadDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONDownloadDelegate.swift; path = ../JSONDownloadDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,13 @@
 		271280461DA79983008EF5A1 /* Fodbold */ = {
 			isa = PBXGroup;
 			children = (
+				2712805F1DA79D91008EF5A1 /* Player.swift */,
+				271280611DA7A067008EF5A1 /* StateController.swift */,
+				271280631DA7A351008EF5A1 /* JSONDownload.swift */,
+				271280651DA7A3D4008EF5A1 /* JSONDownloadDelegate.swift */,
 				271280471DA79983008EF5A1 /* AppDelegate.swift */,
-				271280491DA79983008EF5A1 /* ViewController.swift */,
 				2712804B1DA79983008EF5A1 /* Main.storyboard */,
+				2712805B1DA79A6A008EF5A1 /* PlayerListViewController.swift */,
 				2712804E1DA79983008EF5A1 /* Assets.xcassets */,
 				271280501DA79983008EF5A1 /* LaunchScreen.storyboard */,
 				271280531DA79983008EF5A1 /* Info.plist */,
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2712804A1DA79983008EF5A1 /* ViewController.swift in Sources */,
+				271280661DA7A3D4008EF5A1 /* JSONDownloadDelegate.swift in Sources */,
+				271280641DA7A351008EF5A1 /* JSONDownload.swift in Sources */,
 				271280481DA79983008EF5A1 /* AppDelegate.swift in Sources */,
+				271280621DA7A067008EF5A1 /* StateController.swift in Sources */,
+				271280601DA79D91008EF5A1 /* Player.swift in Sources */,
+				2712805C1DA79A6A008EF5A1 /* PlayerListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +313,7 @@
 				271280581DA79983008EF5A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
